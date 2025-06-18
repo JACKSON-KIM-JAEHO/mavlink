@@ -35,14 +35,31 @@
 						  "name": "PWM_MAIN_MIN${i}",
 						  "show-if": "PWM_MAIN_TIM0>=-1"
 					  },
+
 					  {
-						  "label": "Max",
-						  "name": "PWM_MAIN_MAX${i}",
+						  "label": "MinCmd",
+						  "name": "PWM_MAIN_MINC${i}",
 						  "show-if": "PWM_MAIN_TIM0>=-1"
 					  },
 					  {
 						  "label": "Neutral",
 						  "name": "PWM_MAIN_NTRL${i}",
+						  "show-if": "PWM_MAIN_TIM0>=-1"
+					  },
+					  {
+						  "label": "NeutralCmd",
+						  "name": "PWM_MAIN_NTRLC${i}",
+						  "show-if": "PWM_MAIN_TIM0>=-1"
+					  },
+					  {
+						  "label": "Max",
+						  "name": "PWM_MAIN_MAX${i}",
+						  "show-if": "PWM_MAIN_TIM0>=-1"
+					  },
+
+					  {
+						  "label": "MaxCmd",
+						  "name": "PWM_MAIN_MAXC${i}",
 						  "show-if": "PWM_MAIN_TIM0>=-1"
 					  },
 					  {
@@ -121,14 +138,31 @@
 						  "name": "PWM_AUX_MIN${i}",
 						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
+
 					  {
-						  "label": "Max",
-						  "name": "PWM_AUX_MAX${i}",
+						  "label": "MinCmd`",
+						  "name": "PWM_AUX_MINC${i}",
 						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
 					  {
 						  "label": "Neutral",
 						  "name": "PWM_AUX_NTRL${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+					  {
+						  "label": "NeutralCmd",
+						  "name": "PWM_AUX_NTRLC${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+					  {
+						  "label": "Max",
+						  "name": "PWM_AUX_MAX${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+
+					  {
+						  "label": "MaxCmd",
+						  "name": "PWM_AUX_MAXC${i}",
 						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
 					  {
@@ -173,34 +207,46 @@
 					  {
 						  "label": "Disarmed",
 						  "name": "PWM_AUX_DIS${i}",
-						  "show-if": "PWM_AUX_TIM1>=-1",
+						  "show-if": "PWM_AUX_TIM0>=-1",
 						  "function": "disarmed",
 						  "advanced": true
 					  },
 					  {
 						  "label": "Min",
 						  "name": "PWM_AUX_MIN${i}",
-						  "show-if": "PWM_AUX_TIM1>=-1"
+						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
+
 					  {
-						  "label": "Max",
-						  "name": "PWM_AUX_MAX${i}",
-						  "show-if": "PWM_AUX_TIM1>=-1"
+						  "label": "MinCmd",
+						  "name": "PWM_AUX_MINC${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
 					  {
 						  "label": "Neutral",
 						  "name": "PWM_AUX_NTRL${i}",
-						  "show-if": "PWM_AUX_TIM1>=-1"
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+					  {
+						  "label": "NeutralCmd",
+						  "name": "PWM_AUX_CMD_N${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+					  {
+						  "label": "Max",
+						  "name": "PWM_AUX_MAX${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
+					  },
+
+					  {
+						  "label": "MaxCmd",
+						  "name": "PWM_AUX_MAXC${i}",
+						  "show-if": "PWM_AUX_TIM0>=-1"
 					  },
 					  {
 						  "label": "Failsafe",
 						  "name": "PWM_AUX_FAIL${i}",
-						  "show-if": "PWM_AUX_TIM1>=-1"
-					  },
-					  {
-						  "label": "Min",
-						  "name": "DSHOT_FMU_MIN${i}",
-						  "show-if": "PWM_AUX_TIM1<-1"
+						  "show-if": "PWM_AUX_TIM0>=-1"
 					  }
 				  ],
 				  "channels": [
@@ -241,8 +287,8 @@
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
-						  "label": "Max",
-						  "name": "PWM_AUX_MAX${i}",
+						  "label": "MinCmd",
+						  "name": "PWM_AUX_MINC${i}",
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
@@ -251,8 +297,19 @@
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
-						  "label": "Failsafe",
-						  "name": "PWM_AUX_FAIL${i}",
+						  "label": "NeutralCmd",
+						  "name": "PWM_AUX_CMD_N${i}",
+						  "show-if": "PWM_AUX_TIM02>=-1"
+					  },
+					  {
+						  "label": "Max",
+						  "name": "PWM_AUX_MAX${i}",
+						  "show-if": "PWM_AUX_TIM2>=-1"
+					  },
+
+					  {
+						  "label": "MaxCmd",
+						  "name": "PWM_AUX_MAXC${i}",
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
@@ -298,14 +355,31 @@
 						  "name": "PWM_AUX_MIN${i}",
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
+
 					  {
-						  "label": "Max",
-						  "name": "PWM_AUX_MAX${i}",
+						  "label": "MinCmd",
+						  "name": "PWM_AUX_MINC${i}",
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
 						  "label": "Neutral",
 						  "name": "PWM_AUX_NTRL${i}",
+						  "show-if": "PWM_AUX_TIM2>=-1"
+					  },
+					  {
+						  "label": "NeutralCmd",
+						  "name": "PWM_AUX_CMD_N${i}",
+						  "show-if": "PWM_AUX_TIM2>=-1"
+					  },
+					  {
+						  "label": "Max",
+						  "name": "PWM_AUX_MAX${i}",
+						  "show-if": "PWM_AUX_TIM2>=-1"
+					  },
+
+					  {
+						  "label": "MaxCmd",
+						  "name": "PWM_AUX_MAXC${i}",
 						  "show-if": "PWM_AUX_TIM2>=-1"
 					  },
 					  {
