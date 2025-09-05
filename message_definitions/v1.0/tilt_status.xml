@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>common.xml</include>
+  <messages>
+    <message id="514" name="TILT_STATUS">
+      <description>Realtime status of tilt motors</description>
+            <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
+            <field type="uint16_t[4]" name="realtime_tick">Realtime tick value for each motor.</field>
+            <field type="uint8_t[4]" name="error_status">Error status for each motor.</field>
+            <field type="float[4]" name="angle" units="deg">Actual angle of each motor.</field>
+            <field type="float[4]" name="angular_vel" units="deg/s">Actual angular velocity of each motor.</field>
+            <field type="float[4]" name="voltage" units="V">Actual voltage of each motor.</field>
+            <field type="int32_t[4]" name="current" units="mA">Actual current of each motor.</field>
+            <field type="float[4]" name="temperature" units="degC">Actual temperature of each motor.</field>
+    </message>
+  </messages>
+</mavlink>
+            

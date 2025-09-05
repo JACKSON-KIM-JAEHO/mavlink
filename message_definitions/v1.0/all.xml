@@ -48,5 +48,6 @@
     messages: 52000 - ? < 60000
     commands: 52000 - ? < 60000
   -->
+  <include>tilt_status.xml</include>
   <messages/>
 </mavlink>
